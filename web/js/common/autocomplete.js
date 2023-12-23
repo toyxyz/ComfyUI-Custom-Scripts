@@ -190,8 +190,8 @@ class TextAreaCaretHelper {
 			throw new Error("Given element does not belong to window");
 		}
 		const offset = {
-			top: rect.top + defaultView.pageYOffset,
-			left: rect.left + defaultView.pageXOffset,
+			top: 0,
+			left: 0,
 		};
 		if (documentElement) {
 			offset.top -= documentElement.clientTop;
