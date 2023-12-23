@@ -257,8 +257,8 @@ class TextAreaCaretHelper {
 		const elScroll = this.#getElScroll();
 		const cursorPosition = this.#getCursorPosition();
 		const lineHeight = this.#getLineHeightPx();
-		const top = elOffset.top - elScroll.top + cursorPosition.top + lineHeight;
-		const left = elOffset.left - elScroll.left + cursorPosition.left;
+		const top = 0;
+		const left = 0;
 		const clientTop = this.el.getBoundingClientRect().top;
 		if (this.el.dir !== "rtl") {
 			return { top, left, lineHeight, clientTop };
